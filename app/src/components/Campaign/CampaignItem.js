@@ -7,6 +7,11 @@ import playIcon from "static/play.svg";
 import "./Campaign.css";
 
 export default function CampaignItem({ item }) {
+  const handleCopy = (link) => {
+    navigator.clipboard.writeText(link);
+    alert("Link copied to your clipboard!");
+  };
+
   return (
     <>
       <div className="descriptionContainer">
@@ -32,12 +37,17 @@ export default function CampaignItem({ item }) {
               </div>
             )}
             <div className="btnGroup">
-              <div className="btn">
+              <div
+                className="btn"
+                onClick={() => handleCopy(media.tracking_link)}
+              >
                 <img src={linkImg} alt="Link button" />
               </div>
-              <div className="btn">
-                <img src={downloadImg} alt="Download button" />
-              </div>
+              <a href={media.download_url} download>
+                <div className="btn">
+                  <img src={downloadImg} alt="Download button" />
+                </div>
+              </a>
             </div>
           </div>
         ))}
