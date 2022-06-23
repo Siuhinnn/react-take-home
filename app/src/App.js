@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 import Header from "./components/Header";
+import CampaignList from "./components/Campaign/CampaignList";
 
 import "./App.css";
 
@@ -28,6 +29,9 @@ function App() {
   return (
     <>
       <Header />
+      <div className="pageContainer">
+        <CampaignList data={dataArray} />
+      </div>
     </>
   );
 }
