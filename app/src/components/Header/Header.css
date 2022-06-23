@@ -1,0 +1,10 @@
+.headerStyle {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  text-align: center;
+  box-shadow: 0px 1px 0px #e0eef2;
+  z-index: 101;
+  background-color: #fff;
+}

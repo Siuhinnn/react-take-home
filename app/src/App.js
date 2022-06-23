@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
+import Header from "./components/Header";
+
 import "./App.css";
 
 function App() {
@@ -14,7 +16,6 @@ function App() {
           "https://www.plugco.in/public/take_home_sample_feed"
         );
         const result = await response.json();
-        console.log(result);
         setDataArray(result.campaigns);
         setErrorMsg(null);
       } catch (err) {
@@ -24,7 +25,11 @@ function App() {
     fetchData();
   }, []);
 
-  return <></>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
