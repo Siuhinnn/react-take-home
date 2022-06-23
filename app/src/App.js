@@ -30,7 +30,11 @@ function App() {
     <>
       <Header />
       <div className="pageContainer">
-        <CampaignList data={dataArray} />
+        {errorMsg ? (
+          <p>{`Error: ${errorMsg}`}</p>
+        ) : (
+          <CampaignList data={dataArray} />
+        )}
       </div>
     </>
   );
