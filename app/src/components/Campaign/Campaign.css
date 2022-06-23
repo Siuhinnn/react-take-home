@@ -1,0 +1,65 @@
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0eef2;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 10px;
+}
+.description .name {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.description .preInstall {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.32px;
+  color: #009330;
+}
+.icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+}
+
+.mediaContainer {
+  background: #f7fbfc;
+  box-shadow: 0px 1px 0px #e0eef2;
+  display: flex;
+  overflow: scroll;
+}
+.mediaItem {
+  width: 101px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+.coverPic {
+  width: 101px;
+  height: 179px;
+  border-radius: 6px;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btnGroup :active {
+  background: #e0eef2;
+}
+.btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e0eef2;
+}
